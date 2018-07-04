@@ -15,7 +15,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         log.info("Start init...");
-
         try (InputStream inputStream = ClassLoader.getSystemResourceAsStream("app.properties")) {
             props.load(inputStream);
         }
